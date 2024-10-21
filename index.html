@@ -578,6 +578,7 @@
                             </div>
                             <!-- النص -->
                             <div class="cnzc6">
+
                                 <div class="cml7t cx3jz cgi3a c3ezw c27r3 cfebz c4agq" x-ref="testimonials" style="height: 90px;">
                                     <template x-for="(item, index) in items" :key="index">
                                         <div x-show="active === index" x-transition:enter="cqxsj cgi3a cwc7v clso0 cm6k3" x-transition:enter-start="croy4 c91p3" x-transition:enter-end="c32rm cbcl2" x-transition:leave="cqxsj czno1 cpjek c3ezw ca5ue" x-transition:leave-start="c32rm cbcl2" x-transition:leave-end="croy4 c9ik3">
@@ -589,22 +590,22 @@
                             <!-- الأزرار -->
                             <div class="csqqr cbsu6 c1h8r c4agq">
                                 <template x-for="(item, index) in items" :key="index">
-                                    <div class="employee-buttons">
-                                        <button class="c3d7q c272e cegg3 c8isz c1mpe ccqfq cit3o cx3jz cgi3a cqxsj c27r3 coow7 codga cfl4k cfu91" :class="active === index ? 'c32rm' : 'cz8e7 cwj4n'" @click="active = index; stopAutorotate();">
-                                            <span class="c27r3">
-                                                <span class="c8azi" x-text="item.name"></span> <span class="cbo5o">-</span> <span x-text="item.role"></span>
-                                            </span>
-                                        </button>
-                                        <!-- أزرار واتساب والاتصال -->
-                                        <a :href="'https://wa.me/' + item.whatsapp" class="whatsapp-button" target="_blank">
-                                            <i class="fab fa-whatsapp"></i>
-                                        </a>
-                                        <a :href="'tel:' + item.phone" class="call-button">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </a>
-                                        
-                                    </div>
-                                </template>
+                                <div class="employee-buttons">
+                                    <!-- أزرار واتساب والاتصال -->
+                                    <a :href="'https://wa.me/' + item.whatsapp" class="whatsapp-button" target="_blank">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a :href="'tel:' + item.phone" class="call-button">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </a>
+                                    
+                                    <button class="c3d7q c272e cegg3 c8isz c1mpe ccqfq cit3o cx3jz cgi3a cqxsj c27r3 coow7 codga cfl4k cfu91" :class="active === index ? 'c32rm' : 'cz8e7 cwj4n'" @click="active = index; stopAutorotate();">
+                                        <span class="c27r3">
+                                            <span class="c8azi" x-text="item.name"></span> <span class="cbo5o">-</span> <span x-text="item.role"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </template>
                             </div>
                         </div>
                         <!-- بيانات السلايدر ووظيفته -->
